@@ -18,8 +18,6 @@ public class LearnXpath {
 		  * 2)//parent[index]    eg :
 		  * 3) parent/child/child[index]   (//ul[@class='list'])[1]/li[4]/a
 		  * 4) using text  //tagname[contains(text(),'sometext')]
-		  * 
-		  *
 		  */
 		 
 		 driver.findElement(By.xpath("//a[@class='ico-login']")).click();
