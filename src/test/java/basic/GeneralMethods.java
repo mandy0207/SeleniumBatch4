@@ -33,7 +33,7 @@ public class GeneralMethods {
 		System.out.println(heading.getCssValue("padding"));
 		
 		//ToolTip is nothing but a value of title attribute
-		String toolTip=driver.findElement(By.id("booking_engine_hotels")).getAttribute("title");
+		String toolTip=driver.findElement(By.xpath("//*[@id='booking_engine_hotels']")).getAttribute("title");
 		System.out.println(toolTip);
 		
 		
