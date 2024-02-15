@@ -16,9 +16,7 @@ public class HandleTables {
 		driver.get("https://selenium.qabible.in/table-pagination.php");
 		
 		List<WebElement> list = driver.findElements(By.xpath("//table[@id='dtBasicExample']/tbody/tr[4]/td"));
-		
-
-		
+	
 		for(int i =0;i<list.size();i++) {
 			System.out.println(list.get(i).getText());
 		}
