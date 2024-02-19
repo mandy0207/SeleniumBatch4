@@ -25,7 +25,7 @@ public class LearnCssSelector {
 		 driver.findElement(By.cssSelector("#Email")).sendKeys("obsqura24@gmail.com");
 		 
 		 driver.findElement(By.cssSelector("input[name='Password']")).sendKeys("mypassword");
-		 
+		
 		 driver.findElement(By.cssSelector(".button-1.login-button")).click();
 		 
 		 driver.quit();
