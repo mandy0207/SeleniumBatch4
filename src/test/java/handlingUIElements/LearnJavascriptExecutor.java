@@ -13,19 +13,17 @@ public class LearnJavascriptExecutor {
 		driver.manage().window().maximize();
 		driver.get("https://selenium.qabible.in/simple-form-demo.php");
 		
-	
+	    //Casting driver to JSExecutor
 		JavascriptExecutor js= (JavascriptExecutor)driver;
 		
 		WebElement messageInput=driver.findElement(By.cssSelector("[id='single-input-field']"));
+		
 		js.executeScript("arguments[0].value='Hello I am travelling today';", messageInput);
 		
 		WebElement messageBtn=driver.findElement(By.cssSelector("[id='button-one']"));
 		Thread.sleep(2000);
 		js.executeScript("arguments[0].click();", messageBtn);
-		
-		
-		
-
+	
 	}
 
 }
