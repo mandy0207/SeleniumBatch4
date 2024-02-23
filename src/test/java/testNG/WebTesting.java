@@ -19,6 +19,7 @@ public class WebTesting {
 	 * 6) After test will execute once after all the test cases present inside class
 	 * 7) Before method will execute before every test case or method.
 	 * 8) After method will execute after every test case or method
+	 * 9) Before Test executes first before before class and vice versa
 	 */
 	
 	@Test
@@ -57,9 +58,6 @@ public class WebTesting {
 		System.out.println("I am in after test");
 	}
 	
-	
-	
-	
-	
+
 	
 }
