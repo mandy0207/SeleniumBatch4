@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class MobileTesting {
 
 
-	@Test
+    @Test
 	public void firstMobileTest() {
 		System.out.println("I am in first Mobile Test");
 	}
@@ -20,25 +20,25 @@ public class MobileTesting {
 	}
 	
 	
-	@BeforeTest
-	public void beforeTest() {
-		System.out.println("I am in before test");
-	}
-	
-	@AfterTest
-	public void afterTest() {
-		System.out.println("I am in after test");
-	}
-	
+//	@BeforeTest
+//	public void beforeTest() {
+//		System.out.println("I am in before Mobile test");
+//	}
+//	
+//	@AfterTest
+//	public void afterTest() {
+//		System.out.println("I am in after Mobile test");
+//	}
+
 	@BeforeClass
 	public void beforeClass() {
-		System.out.println("I am in before class");
+		System.out.println("I am in before Mobile class");
 	}
 	
 
 	@AfterClass
 	public void afterClass() {
-		System.out.println("I am in after class");
+		System.out.println("I am in after Mobile class");
 	}
 	
 
