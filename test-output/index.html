@@ -50,17 +50,17 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\InfoBahn\eclipse-workspace\SeleniumAutomation\testng2.xml</span>
+                    <span>C:\Users\InfoBahn\eclipse-workspace\SeleniumAutomation\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>0 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -118,7 +118,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testNG.MobileTesting" class="method navigator-link" hash-for-method="secondMobileTest">secondMobileTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testNG.MobileTesting" class="method navigator-link" hash-for-method="secondMobileTest(null, null)">secondMobileTest(null, null)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -153,9 +153,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="secondMobileTest">
-                  </a> <!-- secondMobileTest -->
+                  <a name="secondMobileTest(null, null)">
+                  </a> <!-- secondMobileTest(null, null) -->
                   <span class="method-name">secondMobileTest</span>
+                  <span class="parameters">(null,null)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -192,23 +193,19 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\InfoBahn\eclipse-workspace\SeleniumAutomation\testng2.xml</span>
+            <span class="header-content">C:\Users\InfoBahn\eclipse-workspace\SeleniumAutomation\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;WebTesting&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testNG.WebTesting&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- WebTesting --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;MobileTesting&quot;&gt;
-    &lt;classes&gt;
       &lt;class name=&quot;testNG.MobileTesting&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- MobileTesting --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -220,10 +217,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">WebTesting (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">MobileTesting (1 class)</span>
+                <span class="test-name">Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -233,6 +227,18 @@
             <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">firstMobileTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">lasttest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -253,28 +259,28 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'firstWebTest')
 data.setCell(0, 2, 'testNG.WebTesting')
-data.setCell(0, 3, 43);
+data.setCell(0, 3, 4);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'firstMobileTest')
 data.setCell(1, 2, 'testNG.MobileTesting')
-data.setCell(1, 3, 22);
+data.setCell(1, 3, 1);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'lasttest')
 data.setCell(2, 2, 'testNG.WebTesting')
-data.setCell(2, 3, 7);
+data.setCell(2, 3, 1);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'secondWebTest')
-data.setCell(3, 2, 'testNG.WebTesting')
-data.setCell(3, 3, 4);
+data.setCell(3, 1, 'secondMobileTest')
+data.setCell(3, 2, 'testNG.MobileTesting')
+data.setCell(3, 3, 1);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'secondMobileTest')
-data.setCell(4, 2, 'testNG.MobileTesting')
-data.setCell(4, 3, 3);
+data.setCell(4, 1, 'secondWebTest')
+data.setCell(4, 2, 'testNG.WebTesting')
+data.setCell(4, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 79 ms</span>
+              <span class="suite-total-time">Total running time: 7 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -307,49 +313,49 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">62 ms</span>
+                <span class="method-start">15 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">firstWebTest</span>
-                <span class="method-start">171 ms</span>
+                <span class="method-start">38 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">secondWebTest</span>
-                <span class="method-start">234 ms</span>
+                <span class="method-start">46 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">lasttest</span>
-                <span class="method-start">249 ms</span>
+                <span class="method-start">48 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">afterTest</span>
-                <span class="method-start">268 ms</span>
-              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testNG.MobileTesting</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">568 ms</span>
+                <span class="method-start">52 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">firstMobileTest</span>
-                <span class="method-start">570 ms</span>
+                <span class="method-start">53 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">secondMobileTest</span>
-                <span class="method-start">599 ms</span>
+                <span class="method-name">secondMobileTest(null, null)</span>
+                <span class="method-start">64 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">609 ms</span>
+                <span class="method-start">66 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testNG.WebTesting</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">66 ms</span>
+              </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">649 ms</span>
+                <span class="method-start">128 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

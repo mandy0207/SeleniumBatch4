@@ -26,7 +26,7 @@ public class ChildWindow {
 		driver.findElement(By.xpath("//*[@class='example']/a")).click();
 		
 		//grabbing set of window handles
-		Set<String> windowHandles = driver.getWindowHandles();
+	        Set<String> windowHandles = driver.getWindowHandles();
 		//Grabbing parent window handle and child window handle
 		Iterator<String> it = windowHandles.iterator();
 		String parentWindow = it.next();

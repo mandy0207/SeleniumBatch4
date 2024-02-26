@@ -1,22 +1,27 @@
 package testNG;
 
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class MobileTesting {
 
 
-    @Test
+    private Object object;
+
+
+	@Test(groups="Regression")
 	public void firstMobileTest() {
 		System.out.println("I am in first Mobile Test");
 	}
 	
 	@Test
-	public void secondMobileTest() {
+	@Parameters({"UserName","Password"})
+	public void secondMobileTest(@Optional String UserName ,@Optional String Password) {
 		System.out.println("I am in second Mobile Test");
+		System.out.println(UserName + " :"+ Password);
 	}
 	
 	

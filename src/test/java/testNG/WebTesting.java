@@ -32,7 +32,7 @@ public class WebTesting {
 		System.out.println("I am in second web test");
 	}
 	
-	@Test(priority=1)
+	@Test(priority=1,groups="Regression")
 	public void lasttest() {
 		System.out.println("I am in last web Test");
 	}
