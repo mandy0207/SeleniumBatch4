@@ -46,11 +46,4 @@ public class MobileTesting {
 		System.out.println("I am in after Mobile class");
 	}
 	
-
-	
-
-
-
-	
-
 }

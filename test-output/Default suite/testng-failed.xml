@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Java.CookiesTest">
+      <class name="dataProviders.LearnDataProviders">
         <methods>
-          <include name="mytest"/>
+          <include name="myfirstTest"/>
         </methods>
-      </class> <!-- Java.CookiesTest -->
+      </class> <!-- dataProviders.LearnDataProviders -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
