@@ -20,11 +20,7 @@ public class ValidationExample {
 		Assert.assertEquals(actualTitle, "Demo Web Shop");
 
 		boolean isEnabled = driver.findElement(By.cssSelector("[value='Subscribe']")).isEnabled();
-		if (isEnabled)
-			System.out.println(" pASSED");
-
-		else
-			System.out.println("failed");
+		
 
 		System.out.println(isEnabled);
 		Assert.assertTrue(isEnabled);

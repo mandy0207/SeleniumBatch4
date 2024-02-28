@@ -8,10 +8,8 @@ import org.testng.annotations.Test;
 
 public class MobileTesting {
 
-
-    private Object object;
-
-
+	
+	
 	@Test(groups="Regression")
 	public void firstMobileTest() {
 		System.out.println("I am in first Mobile Test");
