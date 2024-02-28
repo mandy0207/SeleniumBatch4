@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="dataProviders.LearnDataProviders">
+      <class name="assertions.ValidationExample">
         <methods>
-          <include name="myfirstTest"/>
+          <include name="seleniumValidation"/>
         </methods>
-      </class> <!-- dataProviders.LearnDataProviders -->
+      </class> <!-- assertions.ValidationExample -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
