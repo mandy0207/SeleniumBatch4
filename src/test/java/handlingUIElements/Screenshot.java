@@ -3,7 +3,6 @@ package handlingUIElements;
 import java.io.File;
 import java.io.IOException;
 
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -22,7 +21,7 @@ public class Screenshot {
 		
 	    File destFile = new File(System.getProperty("user.dir")+"\\src\\test\\java\\handlingUIElements\\screenshot.png");
 		
-	    FileUtils.moveFile(srcFile, destFile);
+	    //FileUtils.moveFile(srcFile, destFile);
 		driver.quit();
 
 	}

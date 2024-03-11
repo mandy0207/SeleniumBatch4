@@ -24,6 +24,7 @@ public class MouseKeyboardActions {
 		
 		//Hover over an element
 		act.moveToElement(homeTab).build().perform();
+		
 		Thread.sleep(2000);
 		act.moveToElement(aboutTab).build().perform();
 		

@@ -19,7 +19,7 @@ public class LearnDataProviders {
 	String data[] [] = new String[3][2];
 		//data of ist row
 		data[0][0]= "Nisyy";
-		data[0][1]= "Chakko";
+		data[0][1]= "user";
 		
 		//data of 2nd row
 		data[1][0]= "Remya";
